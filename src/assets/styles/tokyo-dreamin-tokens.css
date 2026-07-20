@@ -1,0 +1,33 @@
+:root{
+  --color-surface-base:#21152f;
+  --color-card-surface:#321d42;
+  --color-sakura-pink:#ffb2ca;
+  --color-warm-white:#fff7fb;
+  --color-muted-lavender:#d7c3db;
+  --font-display-hero-family:Space Grotesk;
+  --font-display-hero-size:128px;
+  --font-section-heading-family:Space Grotesk;
+  --font-section-heading-size:48px;
+  --font-section-heading-weight:700;
+  --font-section-heading-letter-spacing:-2.4px;
+  --font-card-heading-family:Space Grotesk;
+  --font-card-heading-size:24px;
+  --font-card-heading-line-height:32px;
+  --font-ui-label-bold-family:Space Grotesk;
+  --font-body-mono-family:DM Mono;
+  --font-body-mono-size:16px;
+  --font-body-mono-line-height:24px;
+  --font-eyebrow-mono-wide-size:10px;
+  --font-eyebrow-mono-wide-line-height:15px;
+  --font-eyebrow-mono-wide-letter-spacing:1.6px;
+  --font-fine-print-mono-size:9px;
+  --font-fine-print-mono-letter-spacing:.45px;
+  --spacing-md:12px;
+  --spacing-lg:16px;
+  --spacing-xl:20px;
+  --spacing-2xl:24px;
+  --spacing-3xl:32px;
+  --spacing-4xl:36px;
+  --spacing-5xl:48px;
+  --spacing-10xl:96px;
+}
