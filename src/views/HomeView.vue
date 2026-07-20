@@ -28,7 +28,7 @@ import FooterSection from '@/components/FooterSection.vue'
 </template>
 
 <style scoped>
-main{min-height:100vh;background:linear-gradient(135deg,rgba(16,19,22,.62),rgba(33,21,47,.75)),url('https://image-uploader-f08q.onrender.com/image/6a5e45d98bc29598486b6a2f') center/cover fixed}
+main{min-height:100vh;background:linear-gradient(135deg,rgba(16,19,22,.62),rgba(33,21,47,.75)),url('https://i.imgur.com/tJWmZFf.png') center/cover fixed}
 .hero{min-height:0;display:block;padding:96px 0 var(--spacing-2xl);background:transparent}
 .avatar{width:144px;height:144px;overflow:hidden}
 .avatar-image{width:100%;height:100%;object-fit:cover}
