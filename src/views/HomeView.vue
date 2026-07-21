@@ -19,7 +19,7 @@ import FooterSection from '@/components/FooterSection.vue'
     </section>
     <section id="links" class="section">
       <div class="container">
-        <SectionHeading eyebrow="FIND ME ONLINE" title="Places to connect." />
+        <SectionHeading eyebrow="LANGSUNG AJA" title="Places of Dreams." />
         <div class="social-grid"><SocialCard v-for="item in site.socialLinks" :key="item.label" :item="item" /></div>
       </div>
     </section>
