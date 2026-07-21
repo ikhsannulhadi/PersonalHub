@@ -1,6 +1,6 @@
 # Viewers Hub
 
-Halaman link personal berbasis Vue 3 dan Vite. Halaman ini menampilkan profil, kartu Social Links, preview tautan website server Minecraft, serta footer dalam satu wallpaper penuh.
+Project ini adalah landing page personal berbasis Vue 3 dan Vite dengan tema Tokyo Dreamin yang menampilkan profil, social links, dan halaman Sanfiles.
 
 ## Menjalankan proyek
 
@@ -11,68 +11,44 @@ npm install
 npm run dev
 ```
 
-Untuk membuat build produksi dan memeriksa TypeScript:
+Untuk build produksi dan verifikasi TypeScript:
 
 ```bash
 npm run build
 ```
 
-Hasil build berada di folder `dist/`.
-
-## Mengubah konten
-
-Seluruh konten utama berada di `src/config/site.ts`.
-
-### Profil
-
-Bagian `profile` mengatur:
-
-- `name`: nama besar di bagian atas halaman.
-- `bio` dan `description`: teks profil.
-- `avatarImage`: URL foto profil. Hapus properti ini bila ingin memakai teks dari `avatar` sebagai pengganti foto.
-
-Contoh:
-
-```ts
-avatarImage: 'https://contoh.com/foto-profil.jpg'
-```
-
-### Social Links
-
-Bagian `socialLinks` mengatur setiap kartu link. Properti yang tersedia:
-
-- `label`: nama layanan atau link.
-- `href`: URL tujuan; dibuka pada tab baru.
-- `icon`: teks cadangan saat tidak memakai gambar ikon.
-- `iconImage` (opsional): URL gambar ikon.
-
-Contoh menambah link:
-
-```ts
-{ label: 'Website', href: 'https://namadomain.com', icon: 'W' }
-```
-
-Untuk TikTok dan YouTube, ganti `@yourhandle` pada URL dengan handle akun yang benar.
-
-### Preview server Minecraft
-
-Preview di bawah Social Links berada di `src/views/HomeView.vue`. Ubah atribut `href` pada elemen `server-preview` bila URL website server berubah. Kartu ini membuka situs di tab baru.
-
-### Footer dan SEO
-
-Di `src/config/site.ts`:
-
-- `footer.version` dan `footer.copyright` mengatur teks footer.
-- `seo.title` dan `seo.description` mengatur judul tab browser serta deskripsi halaman.
+Hasil build akan keluar di folder `dist/`.
 
 ## Struktur utama
 
-- `src/views/HomeView.vue`: susunan halaman dan preview server.
-- `src/components/SocialCard.vue`: kartu link yang dapat diklik.
-- `src/components/SectionHeading.vue`: heading bagian Social Links.
-- `src/components/FooterSection.vue`: footer.
-- `src/assets/styles/`: desain global dan token warna/ukuran.
+- `src/views/HomeView.vue`: halaman utama, termasuk tombol hero untuk Sanfiles dan Join Server Minecraft.
+- `src/views/ModpackView.vue`: halaman `/sanfiles` yang menampilkan daftar berkas dan link sharing.
+- `src/components/ModpackCard.vue`: kartu tiap berkas yang tampil di halaman Sanfiles.
+- `src/components/SocialCard.vue`: kartu social link.
+- `src/config/site.ts`: konten profil, social links, footer, dan SEO.
+- `public/mods.json`: sumber data berkas yang dipakai oleh halaman Sanfiles.
 
-## Catatan jumlah followers/subscriber
+## Mengubah konten
 
-Jumlah followers TikTok atau subscriber YouTube secara langsung tidak disertakan, karena memerlukan API resmi serta kredensial server. Link profil tetap bekerja melalui URL handle yang diatur di konfigurasi.
+### Profil dan social links
+
+Semua konten utama dapat diatur dari `src/config/site.ts`.
+
+### Tombol hero di halaman home
+
+Tombol yang tampil di bagian atas halaman home bisa diatur di `src/views/HomeView.vue` lewat array `heroLinks`.
+
+- `enabled: true` → tombol tampil
+- `enabled: false` → tombol disembunyikan
+- `external: false` → memakai router internal (`/sanfiles`)
+- `external: true` → membuka tautan eksternal
+
+### Sanfiles
+
+Halaman `/sanfiles` mengambil data dari `public/mods.json`.
+
+Fitur yang tersedia saat ini:
+
+- Daftar berkas dan link sharing
+- Kartu berkas dengan tombol buka tautan eksternal
+- Struktur data sederhana yang mudah dikembangkan untuk menambah file baru ke depan
