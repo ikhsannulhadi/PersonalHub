@@ -4,10 +4,28 @@
       "id": "Modpack",
       "name": "Modpack Minecraft",
       "description": "Modpack yang kupakai ketika live Minecraft.",
-      "version": "Beta 1.0",
-      "url": "https://zippyshare.day/JoMVw1QfQeMgpDo/file",
+      "version": "Minecraft 1.20.1 Fabric",
+      "url": "https://www.mediafire.com/file/nyx74v7diac3td0/San_Modpack_Java_1.20.1_Fabric.mrpack/file",
       "icon": "https://i.imgur.com/pIpbUEF.png",
-      "source": "Zippyshare"
+      "source": "MediaFire"
+    },
+    {
+      "id": "Model",
+      "name": "Model YSM",
+      "description": "Model-model YSM yang sering kupakai.",
+      "version": "YSM",
+      "url": "https://github.com/Elaina69/Yes-Steve-Model-Repo",
+      "icon": "https://avatars.githubusercontent.com/u/94338907?v=4",
+      "source": "Github"
+    },
+    {
+      "id": "Model",
+      "name": "Pheobe Chubby Model",
+      "description": "Sound dan Model.",
+      "version": "YSM x TLM",
+      "url": "https://www.mediafire.com/file/yo4mivai7oit0pd/Pheobe_Chubby_YSM_x_TLM.zip/file",
+      "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFiG5_HBQSFXKKPtkoLMj9FtIhzlH8fLS0JYlG8wvsTA&s=10",
+      "source": "MediaFire"
     }
 ]
 }
