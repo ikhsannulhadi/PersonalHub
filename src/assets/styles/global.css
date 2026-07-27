@@ -10,7 +10,11 @@ a:focus-visible{outline:3px solid var(--color-sakura-pink);outline-offset:3px}
 .eyebrow{color:var(--color-sakura-pink);font-size:var(--font-eyebrow-mono-wide-size);letter-spacing:var(--font-eyebrow-mono-wide-letter-spacing);line-height:var(--font-eyebrow-mono-wide-line-height)}
 .section{padding:var(--spacing-10xl) 0}
 .section-heading{font-family:var(--font-section-heading-family),sans-serif;font-size:clamp(40px,6vw,var(--font-section-heading-size));font-weight:var(--font-section-heading-weight);letter-spacing:var(--font-section-heading-letter-spacing);line-height:1;margin:var(--spacing-lg) 0 var(--spacing-3xl)}
-.glass{background:rgba(50,29,66,.7);border:1px solid rgba(252,231,243,.2);box-shadow:0 0 35px var(--color-sakura-pink);backdrop-filter:blur(12px)}
+.glass {
+  background: rgba(50, 29, 66, .88);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, .25);
+  backdrop-filter: none;
+}
 .avatar{display:grid;place-items:center;border:1px solid var(--color-sakura-pink);border-radius:50%;background:var(--color-card-surface);font-family:var(--font-ui-label-bold-family),sans-serif;box-shadow:0 0 35px var(--color-sakura-pink)}
 .hero-title{max-width:820px;margin:var(--spacing-xl) 0;font-family:var(--font-display-hero-family),sans-serif;font-size:clamp(64px,11vw,var(--font-display-hero-size));font-weight:700;line-height:.88;letter-spacing:clamp(-6.4px,-.05em,-2.8px)}
 .hero-title span,.arrow{color:var(--color-sakura-pink)}

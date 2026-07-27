@@ -34,7 +34,7 @@ const sharedFiles = computed(() => data.value?.berkas ?? [])
 </template>
 
 <style scoped>
-.modpack-page{min-height:100vh;background:linear-gradient(135deg,rgba(16,19,22,.7),rgba(33,21,47,.86)),url('https://i.imgur.com/tJWmZFf.png') center/cover fixed}
+.modpack-page{min-height:100vh;background:linear-gradient(135deg,rgba(16,19,22,.7),rgba(33,21,47,.86)),url('https://i.imgur.com/tJWmZFf.png') center/cover scroll}
 .mods-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .empty-state{padding:24px;text-align:center;color:var(--color-muted-lavender)}
 @media(max-width:860px){.mods-grid{grid-template-columns:1fr}}
