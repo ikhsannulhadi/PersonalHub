@@ -5,7 +5,7 @@ import SocialCard from '@/components/SocialCard.vue'
 import FooterSection from '@/components/FooterSection.vue'
 
 const heroLinks = [
-  { label: 'Share Link', href: '/sanfiles', enabled: true, external: false },
+  { label: 'Share Link', href: '/sanfiles', enabled: false, external: false },
   { label: 'Join Server Minecraft', href: 'https://tokyodreaminsmp.vercel.app', enabled: true, external: true },
 ]
 </script>
@@ -33,6 +33,18 @@ const heroLinks = [
         <SectionHeading eyebrow="LANGSUNG AJA" title="Places of Dreams." />
         <div class="social-grid"><SocialCard v-for="item in site.socialLinks" :key="item.label" :item="item" /></div>
       </div>
+    </section>
+    <section class="about-section">
+  <div class="container">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya San Dreamin, streamer dan pembuat konten Minecraft.
+      Situs ini berisi tautan resmi ke media sosial dan komunitas saya.
+    </p>
+    <p>
+      Kontak: <a href="mailto:nont.tube@gmail.com">nont.tube@gmail.com</a>
+    </p>
+  </div>
     </section>
     <FooterSection v-bind="site.footer" />
   </main>
