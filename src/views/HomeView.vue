@@ -6,6 +6,7 @@ import FooterSection from '@/components/FooterSection.vue'
 
 const heroLinks = [
   { label: 'Share Link', href: '/sanfiles', enabled: false, external: false },
+  { label: 'Mod dan Modpack', href: 'https://linktr.ee/tokyodreamin', enabled: true, external: true },
   { label: 'Join Server Minecraft', href: 'https://tokyodreaminsmp.vercel.app', enabled: true, external: true },
 ]
 </script>
