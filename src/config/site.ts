@@ -5,7 +5,7 @@ export const site: SiteConfig = {
     name: 'San Dreamin',
     avatar: 'TD',
     avatarImage: 'https://i.imgur.com/pIpbUEF.png',
-    bio: 'My name is San Dreamin, I am a Larp Streamer (yeah).',
+    bio: 'My name is San Dreamin, kinda larp sometimes.',
     description: 'Kalian bisa panggil aku San, bisa sawer juga di Tako dan follow social media ku ya, Terimakasih.',
   },
   socialLinks: [

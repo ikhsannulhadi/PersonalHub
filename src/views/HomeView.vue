@@ -7,7 +7,7 @@ import FooterSection from '@/components/FooterSection.vue'
 const heroLinks = [
   { label: 'Share Link', href: '/sanfiles', enabled: false, external: false },
   { label: 'Mod dan Modpack', href: 'https://linktr.ee/tokyodreamin', enabled: true, external: true },
-  { label: 'Join Server Minecraft', href: 'https://tdsmp.vercel.app', enabled: true, external: true },
+  { label: 'Join Server Minecraft', href: 'https://tdsmp.vercel.app', enabled: false, external: true },
 ]
 </script>
 
@@ -36,16 +36,6 @@ const heroLinks = [
       </div>
     </section>
     <section class="about-section">
-  <div class="container">
-    <h2>Tentang Saya</h2>
-    <p>
-      Saya San Dreamin, streamer dan pembuat konten Minecraft.
-      Situs ini berisi tautan resmi ke media sosial dan komunitas saya.
-    </p>
-    <p>
-      Kontak: <a href="mailto:nont.tube@gmail.com">nont.tube@gmail.com</a>
-    </p>
-  </div>
     </section>
     <FooterSection v-bind="site.footer" />
   </main>
